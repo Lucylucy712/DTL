@@ -34,8 +34,6 @@
 
 4. run the `application.py` script by `$python3 application.py`
 
-The terminal would show some comments as below. Just go to the website to check the results.
+The terminal would show a local address for the website. Just go to the website to check the results
 
-![command results]("/assets/terminal_results.png")
-
-## How to deplot it on AWS 
+## How to deploy it on AWS 
