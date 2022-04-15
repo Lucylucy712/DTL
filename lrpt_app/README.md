@@ -1,7 +1,9 @@
 # Implement of the dash app for DTL Project
 
 ## Codes Structrue and Purpose 
+
 <details><summary> Codes Structure </summary>
+  
 | Folder   | File             | href on web           | Purpose                                                               |
 |----------|------------------|-----------------------|-----------------------------------------------------------------------|
 | ./       | application.py   |                       | The major app script                                                  |
@@ -18,6 +20,7 @@
 |          | XX.cv            |                       | the results table                                                     |
 |          | requirements.txt |                       | to collect all moduels needed for the environment                     |
 | ./assets |                  |                       | to put necessary graphs                                               |
+
 </details>
 
 ## How to run on local using terminal 
@@ -33,6 +36,6 @@
 
 The terminal would show some comments as below. Just go to the website to check the results.
 
-![command results]("./assets/terminal_results.pnd")
+![command results]("/assets/terminal_results.pnd")
 
 ## How to deplot it on AWS 
