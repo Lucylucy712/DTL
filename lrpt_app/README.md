@@ -36,6 +36,6 @@
 
 The terminal would show some comments as below. Just go to the website to check the results.
 
-![command results]("https://github.com/Lucylucy712/DTL/blob/main/lrpt_app/assets/terminal_results.png")
+![command results]("https://github.com/Lucylucy712/DTL/blob/main/lrpt_app/assets/terminal_results.png?raw=true")
 
 ## How to deplot it on AWS 
