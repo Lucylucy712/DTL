@@ -37,3 +37,5 @@
 The terminal would show a local address for the website. Just go to the website to check the results
 
 ## How to deploy it on AWS 
+
+Please follow the [tutorial](https://austinlasseter.medium.com/deploying-a-dash-app-with-elastic-beanstalk-console-27a834ebe91d)
