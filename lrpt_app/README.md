@@ -24,7 +24,7 @@
 </details>
 
 ## How to run on local using terminal 
-1. Set up a [!conda envrionment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) and activate it 
+1. Set up a [conda envrionment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) and activate it 
 
 2. Install all required moduels by 
 `$pip install -r requirements.txt`
@@ -36,6 +36,6 @@
 
 The terminal would show some comments as below. Just go to the website to check the results.
 
-![command results]("/assets/terminal_results.pnd")
+![command results]("https://github.com/Lucylucy712/DTL/blob/main/lrpt_app/assets/terminal_results.png")
 
 ## How to deplot it on AWS 
