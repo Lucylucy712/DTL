@@ -7,7 +7,7 @@
 | Folder   | File             | href on web           | Purpose                                                               |
 |----------|------------------|-----------------------|-----------------------------------------------------------------------|
 | ./       | application_local.py   |                 | The major app script for local run                                    |
-| ./       | application.py   |                       | The major app script for aws run                                      |
+|          | application.py   |                       | The major app script for aws run                                      |
 |          | imports.py       |                       | to import modules at one step                                         |
 |          | sidebar.py       |                       | to set up the sidebar structure                                       |
 |          | style.py         |                       | to save some global style settings                                    |
