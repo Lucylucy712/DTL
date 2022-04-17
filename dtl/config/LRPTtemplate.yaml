@@ -1,0 +1,16 @@
+SYSTEM:
+  MODELNAME: "LRPT"
+  SAVEFOLDER: "/Shelburne/Results/LRPT/Single_1_Anti_2_Dense_1024_Ensemble"
+  
+SHELDATA:
+  ThreeSets: "/Shelburne/Data/Train/TLPARP/shelburne_3sets.pkl"
+  Info: "/Shelburne/Data/Train/TLPARP/shelburne_info.csv"
+
+
+LRPT:
+  VARIANT_DENSE_VERSION: "CopiedWeights"
+  FINAL_DENSE_VERSION: "DefaultWeights"
+
+LRPTTrain:
+  BATCH_SIZE: 32
+  EPOCHS: 100

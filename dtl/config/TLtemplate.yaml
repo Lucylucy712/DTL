@@ -1,0 +1,15 @@
+SYSTEM:
+  MODELNAME: "TL"
+  SAVEFOLDER: "/Shelburne/Results/TL/Single_1_Anti_2_Dense_1024_Ensemble"
+  
+SHELDATA:
+  ThreeSets: "/Shelburne/Data/Train/TLPARP/shelburne_3sets.pkl"
+  Info: "/Shelburne/Data/Train/TLPARP/shelburne_info.csv"
+
+
+TL:
+  FINAL_DENSE_VERSION: "DefaultWeights"
+
+TLTrain:
+  BATCH_SIZE: 32
+  EPOCHS: 100
