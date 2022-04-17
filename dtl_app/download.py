@@ -42,7 +42,8 @@ download =html.Div([
     html.Br(),html.Br(),
     html.H3("Codebook Table: "),
     codebook_table,
-    html.Br(),html.Hr(),
-    html.H3([html.A("Github Site",href="https://github.com/Lucylucy712/DTL/tree/main/dtl_app")])
+    html.Br(),html.Br(),
+    html.H3([html.A("Github Site",href="https://github.com/Lucylucy712/DTL/tree/main/dtl_app")]),
+    html.Hr()
     ],
     style=CONTENT_STYLE)

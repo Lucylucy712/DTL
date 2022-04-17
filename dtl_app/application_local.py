@@ -2,9 +2,8 @@ from imports import *
 from style import * 
 import sidebar,homepage,background,motivation,models,loaddata,download
 pd.options.mode.chained_assignment = None
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.CERULEAN],
+app = dash.Dash(external_stylesheets=[dbc.themes.CERULEAN],
 suppress_callback_exceptions=True,assets_folder="assets",assets_url_path="assets")
-application = app.server
 
 content = html.Div(id="page-content", style=CONTENT_STYLE)
 app.layout = html.Div([dcc.Location(id="url"), sidebar.sidebar, content])

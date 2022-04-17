@@ -6,7 +6,8 @@
   
 | Folder   | File             | href on web           | Purpose                                                               |
 |----------|------------------|-----------------------|-----------------------------------------------------------------------|
-| ./       | application.py   |                       | The major app script                                                  |
+| ./       | application_local.py   |                 | The major app script for local run                                    |
+| ./       | application.py   |                       | The major app script for aws run                                      |
 |          | imports.py       |                       | to import modules at one step                                         |
 |          | sidebar.py       |                       | to set up the sidebar structure                                       |
 |          | style.py         |                       | to save some global style settings                                    |
@@ -32,10 +33,12 @@
 3. change the workding dictionary to the folder dictionary by 
 `$cd \mycomputer\dtl\app\folder_path`
 
-4. run the `application.py` script by `$python3 application.py`
+4. run the `application_loca.py` script by `$python3 application_local.py`
 
 The terminal would show a local address for the website. Just go to the website to check the results
 
 ## How to deploy it on AWS 
 
 Please follow the [tutorial](https://austinlasseter.medium.com/deploying-a-dash-app-with-elastic-beanstalk-console-27a834ebe91d)
+
+Bascially, we need to compress all files, except for application_local.py and ReEADME.md, and upload it to AWS Ealstic Beanstalk. 
