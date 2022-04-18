@@ -31,7 +31,7 @@ model2_list = html.Ul(id='model2_list',children=[
 ])
 
 
-plot_DTL_workflow= base64.b64encode(open("assets/DTL_workflow.png", 'rb').read())
+plot_DTL_workflow= base64.b64encode(open("static/DTL_workflow.png", 'rb').read())
 model2_4 = html.Figure(id="plot_venn",children = [
     html.Img(src='data:image/png;base64,{}'.format(plot_DTL_workflow.decode()),style={"width":"60%","height":"60%"}),
     html.Figcaption("Figure 5: The DTL Project Workflow",style={"text-align":"center"})],
@@ -55,7 +55,7 @@ tlm4_1 = "Check the "
 tlm4_2= html.A("paper",href="https://openaccess.thecvf.com/content_cvpr_2014/html/Oquab_Learning_and_Transferring_2014_CVPR_paper.html")  
 tlm4_3 = " for more details."
 tlm_4 = html.P([tlm4_1,tlm4_2,tlm4_3])
-plot_TL_model= base64.b64encode(open("assets/tl_model.png", 'rb').read())
+plot_TL_model= base64.b64encode(open("static/tl_model.png", 'rb').read())
 tlm_5 = html.Figure(id="plot_venn",children = [
     html.Img(src='data:image/png;base64,{}'.format(plot_TL_model.decode()),style={"width":"60%","height":"60%"}),
     html.Figcaption("Figure 6: The TL Model",style={"text-align":"center"})],
@@ -70,7 +70,7 @@ dtl_2 = html.Ul(children=[
                     html.Li(html.P("The dense layer connected to the variants input")),
                     html.Li(html.P("The dense layer for prediction output"))])
 
-plot_DTL_model= base64.b64encode(open("assets/dtl_model.png", 'rb').read())
+plot_DTL_model= base64.b64encode(open("static/dtl_model.png", 'rb').read())
 dtl_plot = html.Figure(id="plot_venn",children = [
     html.Img(src='data:image/png;base64,{}'.format(plot_DTL_model.decode()),style={"width":"60%","height":"60%"}),
     html.Figcaption("Figure 7: The DTL Model",style={"text-align":"center"})],

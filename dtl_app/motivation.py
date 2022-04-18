@@ -41,7 +41,7 @@ data6 = "The venn plot of the unique variants from the Antibiogram and Shelburne
     One approach to solve the shift domain problem is to re-train the model from scratch using part of the new dataset and evaluate it \
     on the rest. However, due to the sample size limit, it would lead to over-fitting problem in the trianing process."
 
-plot_venn = base64.b64encode(open("assets/Venn_Shel_Anti.png", 'rb').read())
+plot_venn = base64.b64encode(open("static/Venn_Shel_Anti.png", 'rb').read())
 data7 = html.Figure(id="plot_venn",children = [
     html.Img(src='data:image/png;base64,{}'.format(plot_venn.decode()),style={"width":"60%","height":"60%"}),
     html.Figcaption("Figure 4: The Venn diagram of variants",style={"text-align":"center"})],

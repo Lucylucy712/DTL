@@ -32,9 +32,9 @@ parp4 = "The PARP model outperforms in terms of the weighted test prediction acc
 
 #### add plots 
 
-plot_parp_workflow= base64.b64encode(open("assets/PARP_workflow.png", 'rb').read())
-plot_parp_str = base64.b64encode(open("assets/PARP_structure.png", 'rb').read())
-plot_parp_acc = base64.b64encode(open("assets/PARP_accbar.png", 'rb').read())
+plot_parp_workflow= base64.b64encode(open("static/PARP_workflow.png", 'rb').read())
+plot_parp_str = base64.b64encode(open("static/PARP_structure.png", 'rb').read())
+plot_parp_acc = base64.b64encode(open("static/PARP_accbar.png", 'rb').read())
 
 
 background = html.Div([

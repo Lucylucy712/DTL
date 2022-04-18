@@ -37,7 +37,7 @@ load_checklist= html.Div(
     [
         # method 
         html.Label('Choose method:',id="method_label",style={"font-size":'28px'}),
-        dbc.Checklist(id="method_option",options=method_option,value=["LRPT","TL"],
+        dbc.Checklist(id="method_option",options=method_option,value=["TL"],
         input_checked_style={"borderColor":"#0c72ad","backgroundColor":"#1776ad"},
         label_checked_style={"color":"#1776ad"},inline=True),
         # inputs wights

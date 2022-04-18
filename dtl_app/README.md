@@ -20,7 +20,7 @@
 |          | download.py      | /download/download    | to  set up the download tab under **download** section                |
 |          | XX.cv            |                       | the results table                                                     |
 |          | requirements.txt |                       | to collect all moduels needed for the environment                     |
-| ./assets |                  |                       | to put necessary graphs                                               |
+| ./static |                  |                       | to put necessary graphs                                               |
 
 </details>
 
