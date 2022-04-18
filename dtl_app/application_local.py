@@ -49,7 +49,6 @@ def render_page_content(pathname):
 @app.callback(
     Output(component_id="box_plot",component_property="figure"),
     Input(component_id="data_temp",component_property="children"),
-    Input(component_id="metric_dic_temp",component_property="children"),
     Input(component_id="method_option",component_property="value"),
     Input(component_id="epoch_option",component_property="value"),
     Input(component_id="batch_option",component_property="value"),
@@ -57,7 +56,7 @@ def render_page_content(pathname):
     Input(component_id="input_weights_option",component_property="value"),
     Input(component_id="metric_option",component_property="value")
 )
-def draw_graph(data,metric_name_dic,method,epochs_list,batch_list,pred_weights_list,input_weights_list,metric):
+def draw_graph(data,method,epochs_list,batch_list,pred_weights_list,input_weights_list,metric):
     if not metric:
         return {}
     ## get data separately 
@@ -138,7 +137,15 @@ def draw_graph(data,metric_name_dic,method,epochs_list,batch_list,pred_weights_l
     'mean':':.2f','std':":.2f",'25%':':.2f',
     '50%':':.2f', '75%':':.2f'})
 
-    fig.update_yaxes(title=metric_name_dic[metric],title_font_size=20)
+    METRIC_NAME_DIC={
+        "f1score":"F1 score",
+        "precision_score":"precision",
+        "accuracy_score":"accuracy",
+        "balanced_accuracy_score":"balanced accuracy score",
+        "recall_score":"recall",
+        "roc_auc_score":"AUC"}
+
+    fig.update_yaxes(title=METRIC_NAME_DIC[metric],title_font_size=20)
     fig.update_xaxes(title="",visible=True,showticklabels=True,ticklabelposition="outside")
     fig.update_traces(quartilemethod="exclusive")
     return fig 
