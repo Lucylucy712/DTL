@@ -18,7 +18,7 @@
 |          | evaluation.py    | /results/plot         | to set up the evaluation tab under **results** section                |
 |          | loaddata.py      | part of /results/plot | to load the results and set up the plot tab under **results** section |
 |          | download.py      | /download/download    | to  set up the download tab under **download** section                |
-|          | XX.cv            |                       | the results table                                                     |
+|          | XX.cv.gz         |                       | the results table                                                     |
 |          | requirements.txt |                       | to collect all moduels needed for the environment                     |
 | ./static |                  |                       | to put necessary graphs                                               |
 
