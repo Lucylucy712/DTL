@@ -1,10 +1,10 @@
-from imports import * 
-## load data 
-datapath = "Epochs_100_Batch_128_total.csv"
+from imports import *
+## load data
+datapath = "Epochs_100_Batch_128_total.csv.gz"
 DATA = pd.read_csv(datapath,dtype={"config_epochs":int,"config_batch":int})
 DATA.rename(columns={"method":"config_method"},inplace=True)
 
-## metric name fic 
+## metric name fic
 METRIC_NAME_DIC={
     "f1score":"F1 score",
     "precision_score":"precision",
@@ -35,9 +35,9 @@ metric_option = [{"label":"F1 score","value":"f1score"},{"label":"precision","va
 
 load_checklist= html.Div(
     [
-        # method 
+        # method
         html.Label('Choose method:',id="method_label",style={"font-size":'28px'}),
-        dbc.Checklist(id="method_option",options=method_option,value=["TL"],
+        dbc.Checklist(id="method_option",options=method_option,value=["LRPT","TL"],
         input_checked_style={"borderColor":"#0c72ad","backgroundColor":"#1776ad"},
         label_checked_style={"color":"#1776ad"},inline=True),
         # inputs wights
@@ -45,7 +45,7 @@ load_checklist= html.Div(
         dbc.Checklist(id="input_weights_option",options=input_weights_option,value=["DefaultWeights"],
         input_checked_style={"borderColor":"#0c72ad","backgroundColor":"#1776ad"},
         label_checked_style={"color":"#1776ad"},inline=True),
-        # pred weight 
+        # pred weight
         html.Label('Choose predication weights class:', style={"font-size":'28px',"margin-top":"15px"}),
         dbc.Checklist(id="pred_weights_option",options=pred_weights_option,value=["DefaultWeights"],
         input_checked_style={"borderColor":"#0c72ad","backgroundColor":"#1776ad"},
